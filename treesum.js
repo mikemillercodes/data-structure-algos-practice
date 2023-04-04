@@ -17,5 +17,12 @@ const treeSum = (root) => {
       }
     }
     return sum;
-    
   };
+
+  const treeSum = (root) => {
+    // todo
+    // RECURSIVE
+    if (!root) return 0;
+    
+    return root.val + treeSum(root.right) + treeSum(root.left)
+  }
